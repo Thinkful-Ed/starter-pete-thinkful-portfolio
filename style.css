@@ -21,6 +21,10 @@ header {
   text-align: center;
 }
 
+nav{
+  text-align: left;
+}
+
 /* Containers */
 div {
   background-color: #eae2b7;
@@ -37,9 +41,44 @@ article div {
   width: 100%;
 }
 
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  /*border: red 10px solid;*/
+}
+
+.flex-item{
+  flex: 1;
+  /* border: blue 10px solid; */
+  align-self: center;
+}
+
+.flex-item-header{
+  justify-content: right;
+  text-align: right;
+}
+
+.flex-item-about{
+  justify-content: left;
+  text-align: left;
+}
+
+.flex-item-portfolio{
+  flex: 1;
+  justify-content: center;
+  margin: 5px;
+  /* border: blue 10px solid; */
+}
+
 /* Paragraphs */
 p {
   line-height: 1.5;
+}
+
+.p-portfolio{
+  font-size: 14px;
 }
 
 /* Links */
@@ -76,3 +115,4 @@ footer {
 hr {
   border: 1px solid black;
 }
+
