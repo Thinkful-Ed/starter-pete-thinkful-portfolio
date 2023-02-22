@@ -18,28 +18,40 @@ h3 {
 
 /* Header */
 header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Containers */
-div {
+
+ div {
   background-color: #eae2b7;
   margin: auto;
   width: 600px;
-}
+} 
 
 article {
   padding: 50px 0;
 }
 
 article div {
-  text-align: center;
+ text-align: left;
   width: 100%;
+}
+
+.box {
+  display: flex;
+}
+
+.photo {
+  display: flex;
 }
 
 /* Paragraphs */
 p {
   line-height: 1.5;
+  font-size: 14px;
 }
 
 /* Links */
@@ -75,4 +87,8 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+.portfolio {
+  margin-right: 1rem;
 }
