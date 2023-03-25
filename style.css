@@ -18,7 +18,14 @@ h3 {
 
 /* Header */
 header {
+  display: flex;
   text-align: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav {
+  margin-top: 35px;
 }
 
 /* Containers */
@@ -52,7 +59,7 @@ a:hover {
 }
 
 nav a {
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 /* Images */
@@ -64,7 +71,7 @@ img {
 
 .image-circle {
   border: 2px solid #003049;
-  border-radius: 50%;
+  border-radius: 50%; 
 }
 
 /* Footer */
@@ -75,4 +82,28 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+.flexgroup {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+.flexitem {
+  flex: 1;  
+  margin: 5px;
+}
+
+.flexitemx {
+   flex: 1;
+   text-align: left;
+}
+
+article div section p {
+  font-size: 14px;
+}
+
+ul {
+  text-align: left;
 }
