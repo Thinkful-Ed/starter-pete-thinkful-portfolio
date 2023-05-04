@@ -1,78 +1,218 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
-body {
-  background-color: #eae2b7;
+body{
+	background-color: #eae2b7;
+  width: 750px;
+  margin: 0 auto;
+  font-family: 'Times New Roman', Times, serif;
   color: #003049;
-  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
+  
 }
 
-/* Headings */
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", Times, serif;
-  text-align: center;
+.image-circle { 
+  display:flex;
+  border: 2px solid #003049;
+  shape-outside: circle();
+  width: 80%;
 }
-
-/* Header */
 header {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
   text-align: center;
 }
 
-/* Containers */
-div {
-  background-color: #eae2b7;
-  margin: auto;
-  width: 600px;
+.nav-bar {
+  display: flex;
 }
+
+.nav-bar span {
+  margin-left: 20px;
+}
+
+nav a {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #f77f00;
+}
+
+
+.nav-bar {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-bar a {
+  color: #d62828;
+  font-size: 20px;
+}
+/* Set the font family for any h1, h2, or h3 heading */
+h1 {
+  margin: 0;
+  color: #003049;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 30px;
+  
+  }
+
+nav span a {margin-left: 100 px}
+
+nav a:last-of-type {
+  text-align:center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+nav span:first-child {margin-left: 0;}
+
+h4{text-align: right;}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.about-header {
+ text-align: right;;
+}
+.about p{text-align: right;}
+
+.about-content {
+
+  flex-direction: column;
+  text-align: right;
+}
+ul {
+  text-align: right;
+}
+
+
+.about-image-container {
+  width: 50%;
+}
+
+.image-circle {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.about-text-container {
+  width: 50%;
+  margin-right: 30px;
+  text-align: right;
+}
+
+
+.about-background {
+  margin-top: 50px;
+  text-align: right;
+}
+
 
 article {
-  padding: 50px 0;
+  display:flex
+  justify-content: flex-end;
+
+  
 }
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+article div {
+  font-size: 14px;
+}
+
+
+article > div p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+h2 { 
+  text-align: center;}
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: pseudo-classes  
+
+  p { text-align: right;
+    line-height: 1.5
+   }
+}
+ 
+h3 {
+  text-align: center;
+  font-family: "Playfair Display", Times, serif;
+}
+
 
 article div {
   text-align: center;
   width: 100%;
 }
 
-/* Paragraphs */
 p {
   line-height: 1.5;
+  text-align: left
+}
+ol{
+ width: 747px;
+  margin: 16px right;
+font-family: pseudo-classes;}
+
+ul{
+  width: 550px;
+  font-family: pseudo-classes;
+  }
+  
+footer {text-align: center;}
+
+
+/* The div container constrains the content width within the main container to 600px */
+div {
+  margin: auto;
+  width: 600px;
 }
 
-/* Links */
-a:link {
-  color: #d62828;
-}
-
-a:hover {
-  color: #f77f00;
-}
-
-nav a {
-  padding-left: 20px;
-}
-
-/* Images */
 img {
   width: 100%;
   max-width: 200px;
   height: auto;
-}
-
-.image-circle {
-  border: 2px solid #003049;
-  border-radius: 50%;
-}
-
-/* Footer */
-footer {
   text-align: center;
 }
 
-/* Other page elements */
 hr {
   border: 1px solid black;
 }
+
+/* Add your solution below */
+
+.image-circle {
+   width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+  
+.center {
+  background: #003049;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
