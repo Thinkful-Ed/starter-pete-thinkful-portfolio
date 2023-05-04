@@ -80,7 +80,7 @@ h4{text-align: right;}
   align-items: center;
   margin-top: 50px;
 }
-
+li{list-style-position:inside}
 .about-header {
  text-align: right;;
 }
@@ -215,4 +215,17 @@ hr {
   align-items: center;
   text-align: center;
 }
-
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
