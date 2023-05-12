@@ -5,20 +5,30 @@ body{
 	background-color: #eae2b7;
   width: 750px;
   margin: 0 auto;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   color: #003049;
+  padding: 40px;
   
 }
-
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Times, serif;
+  text-align: center;
+}
 .image-circle { 
   display:flex;
   border: 2px solid #003049;
   shape-outside: circle();
   width: 80%;
+  float: left;
 }
 header {
   display: flex;
   justify-content: space-around;
+  text-align: center;
+  align-items: center;
 }
 
 nav {
@@ -132,6 +142,8 @@ article {
 
 article div {
   font-size: 14px;
+  text-align: center;
+  width: 100%;
 }
 
 
@@ -229,3 +241,5 @@ API
 Training
 Blog
 About
+body {
+  
