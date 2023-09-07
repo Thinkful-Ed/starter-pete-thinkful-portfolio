@@ -24,6 +24,10 @@ header {
   text-align: center;
 }
 
+#about {
+  display: flex;
+}
+
 /* Containers */
 div {
   background-color: #eae2b7;
@@ -33,6 +37,11 @@ div {
 
 article {
   padding: 50px 0;
+}
+
+#portfolio {
+  display: flex;
+  justify-content: center;
 }
 
 article div {
