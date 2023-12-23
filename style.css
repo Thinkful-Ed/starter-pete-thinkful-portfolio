@@ -50,5 +50,29 @@ header {
 .petes-background {
   margin-top: 40px;
 }
-/* ... (remaining CSS remains unchanged) ... */
+
+/* Portfolio section */
+#portfolio {
+  padding-top: 50px;
+}
+
+.portfolio-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  width: calc(33.33% - 20px);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project-description {
+  font-size: 14px;
+}
 
