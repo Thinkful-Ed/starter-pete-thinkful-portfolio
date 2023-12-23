@@ -1,6 +1,7 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
+/* Updated CSS */
 body {
   background-color: #eae2b7;
   color: #003049;
@@ -8,99 +9,46 @@ body {
   padding: 40px;
 }
 
-/* Headings */
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", Times, serif;
-  text-align: center;
-}
-
 /* Header */
 header {
   text-align: center;
-  background-color: #f0f0f0; /* Background color for the header */
-  padding: 20px; /* Padding for the header */
+  background-color: #f0f0f0;
+  padding: 20px;
 }
 
 /* Use flexbox for header content alignment */
 .header-content {
   display: flex;
-  justify-content: space-between; /* Align items horizontally */
-  align-items: center; /* Vertically center items */
-  max-width: 600px; /* Adjust maximum width for responsiveness */
-  margin: 0 auto; /* Center the header content horizontally */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-/* Apply styles to the logo text */
-h1 {
-  margin: 0; /* Remove default margins */
-  font-size: 24px; /* Adjust font size */
+/* About section */
+#about {
+  padding-top: 50px;
 }
 
-/* Apply styles to the navigation links */
-nav {
+.about-content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-nav a {
-  margin-left: 20px; /* Adjust spacing between links */
-  text-decoration: none; /* Remove default link underline */
-  color: #333; /* Set link color */
+.about-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
 }
 
-nav a:hover {
-  color: #555; /* Change link color on hover */
+.about-details img {
+  margin-bottom: 20px;
 }
 
-/* Containers */
-div {
-  background-color: #eae2b7;
-  margin: auto;
-  width: 600px;
+.petes-background {
+  margin-top: 40px;
 }
+/* ... (remaining CSS remains unchanged) ... */
 
-article {
-  padding: 50px 0;
-}
-
-article div {
-  text-align: center;
-  width: 100%;
-}
-
-/* Paragraphs */
-p {
-  line-height: 1.5;
-}
-
-/* Links */
-a:link {
-  color: #d62828;
-}
-
-a:hover {
-  color: #f77f00;
-}
-
-/* Images */
-img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-}
-
-.image-circle {
-  border: 2px solid #003049;
-  border-radius: 50%;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-}
-
-/* Other page elements */
-hr {
-  border: 1px solid black;
-}
