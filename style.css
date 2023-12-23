@@ -19,6 +19,38 @@ h3 {
 /* Header */
 header {
   text-align: center;
+  background-color: #f0f0f0; /* Background color for the header */
+  padding: 20px; /* Padding for the header */
+}
+
+/* Use flexbox for header content alignment */
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Vertically center items */
+  max-width: 600px; /* Adjust maximum width for responsiveness */
+  margin: 0 auto; /* Center the header content horizontally */
+}
+
+/* Apply styles to the logo text */
+h1 {
+  margin: 0; /* Remove default margins */
+  font-size: 24px; /* Adjust font size */
+}
+
+/* Apply styles to the navigation links */
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-left: 20px; /* Adjust spacing between links */
+  text-decoration: none; /* Remove default link underline */
+  color: #333; /* Set link color */
+}
+
+nav a:hover {
+  color: #555; /* Change link color on hover */
 }
 
 /* Containers */
@@ -49,10 +81,6 @@ a:link {
 
 a:hover {
   color: #f77f00;
-}
-
-nav a {
-  padding-left: 20px;
 }
 
 /* Images */
