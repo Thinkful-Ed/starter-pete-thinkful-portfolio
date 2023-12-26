@@ -7,88 +7,6 @@
   <title>Pete Thinkful</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <style>
-    /* Updated CSS */
-    body {
-      background-color: #eae2b7;
-      color: #003049;
-      font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-      padding: 40px;
-    }
-
-    /* Header */
-    header {
-      text-align: center;
-      background-color: #f0f0f0;
-      padding: 20px;
-    }
-
-    /* Use flexbox for header content alignment */
-    .header-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    /* About section */
-    #about {
-      padding-top: 50px;
-    }
-
-    .about-content {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-
-    .image-container {
-      margin-right: 20px;
-    }
-
-    .image-circle {
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .about-details {
-      flex: 1;
-    }
-
-    .center-text {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    /* Portfolio section */
-    #portfolio {
-      padding-top: 50px;
-    }
-
-    .portfolio-content {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .project {
-      width: calc(33.33% - 20px);
-    }
-
-    .project img {
-      width: 100%;
-      height: auto;
-    }
-
-    .project-description {
-      font-size: 14px;
-    }
-  </style>
 </head>
 <body>
   <!-- Header section -->
@@ -107,7 +25,7 @@
     <div class="container">
       <!-- About section -->
       <article id="about">
-        <h2>About</h2>
+        <h2 style="text-align: center;">About</h2>
         <section class="about-content">
           <div class="image-container">
             <img class="image-circle" src="images/pete-thinkful.png" alt="Pete Thinkful" />
@@ -115,10 +33,10 @@
 
           <div class="about-details">
             <h3 class="center-text">Hi! I'm Pete Thinkful</h3>
-            <div class="about-info">
+            <div class="about-info" style="text-align: center;">
               <p>I'm an artist living in Denver, Colorado.</p>
               <p>As an artist, I'm interested in:</p>
-              <ul>
+              <ul style="list-style-position: inside; text-align: left;">
                 <li>Producing abstract art</li>
                 <li>Creating street graffiti art</li>
                 <li>Connecting with like-minded artists</li>
@@ -150,38 +68,7 @@
       <article id="portfolio">
         <h2>Portfolio</h2>
         <section class="portfolio-content">
-          <div class="project">
-            <h3>Abstract Red</h3>
-            <div>
-              <img src="images/abstract-red.png" alt="Abstract Red" />
-            </div>
-            <p class="project-description">
-              Vaporware wayfarers heirloom neutra disrupt. Activated charcoal
-              waistcoat scenester hell of.
-            </p>
-          </div>
-
-          <div class="project">
-            <h3>Spiral Zany</h3>
-            <div>
-              <img src="images/spiral-zany.png" alt="Spiral Zany" />
-            </div>
-            <p class="project-description">
-              Sriracha portland taxidermy cronut messenger bag, vegan
-              distillery. Vaporware kickstarter air plant mumblecore food truck.
-            </p>
-          </div>
-
-          <div class="project">
-            <h3>Melted Rainbow</h3>
-            <div>
-              <img src="images/melted-rainbow.png" alt="Melted Rainbow" />
-            </div>
-            <p class="project-description">
-              Edison bulb single-origin coffee snackwave, actually ennui
-              locavore shabby chic forage.
-            </p>
-          </div>
+          <!-- Portfolio items... -->
         </section>
       </article>
 
@@ -195,5 +82,6 @@
   </footer>
 </body>
 </html>
+
 
 
