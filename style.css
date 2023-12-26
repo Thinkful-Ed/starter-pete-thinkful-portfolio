@@ -75,17 +75,7 @@ header {
 }
 
 .project img {
-  width: 100%;
-  height: auto;
-}
+  width
 
-.project-description {
-  font-size: 14px;
-}
-
-/* Centering the About and Portfolio headers */
-h2 {
-  text-align: center;
-}
 
 
