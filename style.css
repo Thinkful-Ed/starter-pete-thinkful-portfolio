@@ -50,11 +50,12 @@ header {
 
 .about-details {
   flex: 1;
-  text-align: center;
+  text-align: center; /* Center text within the about details */
 }
 
-.about-info {
-  text-align: left;
+.center-text {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* Portfolio section */
@@ -81,4 +82,10 @@ header {
 .project-description {
   font-size: 14px;
 }
+
+/* Centering the About and Portfolio headers */
+h2 {
+  text-align: center;
+}
+
 
