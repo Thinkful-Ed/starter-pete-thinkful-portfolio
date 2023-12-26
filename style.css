@@ -50,11 +50,11 @@ header {
 
 .about-details {
   flex: 1;
+  text-align: center;
 }
 
-.center-text {
-  text-align: center;
-  margin-bottom: 10px;
+.about-info {
+  text-align: left;
 }
 
 /* Portfolio section */
