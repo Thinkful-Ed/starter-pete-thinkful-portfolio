@@ -1,7 +1,6 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
-/* CSS for header */
 body {
   background-color: #eae2b7;
   color: #003049;
@@ -10,39 +9,35 @@ body {
 }
 
 /* Headings */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
 }
 
 /* Header */
-header {
+header{
+  text-align: center
+}
+.container{
+  display:flex;
   text-align: center;
-  background-color: #f0f0f0;
-  padding: 20px;
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+
 }
 
-.header-content {
+.title{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+.items{
   display: flex;
-  align-items: center;
-}
-
-.header-content h1 {
-  margin: 0;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: #003049;
-  padding: 10px;
+  flex-direction: column;
+  text-align:left;
 }
 
 /* Containers */
@@ -62,7 +57,7 @@ article div {
 }
 
 /* Paragraphs */
-p {
+p { 
   line-height: 1.5;
 }
 
@@ -89,6 +84,7 @@ img {
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
+ 
 }
 
 /* Footer */
@@ -99,60 +95,4 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
-}
-
-/* About section */
-#about {
-  padding-top: 50px;
-}
-
-.about-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.image-circle {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-
-.petes-background {
-  text-align: left;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-/* Portfolio section */
-#portfolio {
-  padding-top: 50px;
-}
-
-.portfolio-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.project {
-  width: 30%; /* Adjust the width based on the layout */
-  text-align: center;
-}
-
-.project img {
-  width: 100%;
-  height: auto;
-}
-
-.project-description {
-  font-size: 14px;
 }
