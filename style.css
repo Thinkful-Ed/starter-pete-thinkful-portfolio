@@ -1,4 +1,6 @@
-/* Updated CSS */
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+
 body {
   background-color: #eae2b7;
   color: #003049;
@@ -6,81 +8,73 @@ body {
   padding: 40px;
 }
 
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Times, serif;
+  text-align: center;
+}
+
 /* Header */
 header {
   text-align: center;
-  background-color: #f0f0f0;
-  padding: 20px;
 }
 
-/* Use flexbox for header content alignment */
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
+/* Containers */
+div {
+  background-color: #eae2b7;
+  margin: auto;
+  width: 600px;
 }
 
-/* About section */
-#about {
-  padding-top: 50px;
+article {
+  padding: 50px 0;
 }
 
-.about-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; /* Adjust margin as needed */
-}
-
-.image-circle {
-  border-radius: 50%;
-  width: 200px; /* Adjust the size of the image */
-  height: 200px; /* Adjust the size of the image */
-  object-fit: cover;
-  margin-right: 20px; /* Adjust margin as needed */
-}
-
-.petes-background {
-  margin-top: 20px; /* Adjust margin as needed */
-}
-
-/* Portfolio section */
-#portfolio {
-  padding-top: 50px;
-}
-
-.portfolio-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.project {
-  width: calc(33.33% - 20px);
-}
-
-.project img {
+article div {
+  text-align: center;
   width: 100%;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.5;
+}
+
+/* Links */
+a:link {
+  color: #d62828;
+}
+
+a:hover {
+  color: #f77f00;
+}
+
+nav a {
+  padding-left: 20px;
+}
+
+/* Images */
+img {
+  width: 100%;
+  max-width: 200px;
   height: auto;
 }
 
-.project-description {
-  font-size: 14px;
+.image-circle {
+  border: 2px solid #003049;
+  border-radius: 50%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+/* Other page elements */
+hr {
+  border: 1px solid black;
 }
 
 
