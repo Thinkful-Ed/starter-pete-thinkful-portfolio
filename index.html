@@ -7,6 +7,88 @@
   <title>Pete Thinkful</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    /* Updated CSS */
+    body {
+      background-color: #eae2b7;
+      color: #003049;
+      font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+      padding: 40px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    /* Use flexbox for header content alignment */
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* About section */
+    #about {
+      padding-top: 50px;
+    }
+
+    .about-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .image-container {
+      margin-right: 20px;
+    }
+
+    .image-circle {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .about-details {
+      flex: 1;
+    }
+
+    .center-text {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    /* Portfolio section */
+    #portfolio {
+      padding-top: 50px;
+    }
+
+    .portfolio-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project {
+      width: calc(33.33% - 20px);
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+    }
+
+    .project-description {
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
   <!-- Header section -->
@@ -24,45 +106,45 @@
   <main>
     <div class="container">
       <!-- About section -->
-<article id="about">
-  <h2>About</h2>
-  <section class="about-content">
-    <div class="about-details">
-      <div class="about-info">
-        <h3>Hi! I'm Pete Thinkful</h3>
-        <p>I'm an artist living in Denver, Colorado.</p>
-        <p>As an artist, I'm interested in:</p>
-        <ul>
-          <li>Producing abstract art</li>
-          <li>Creating street graffiti art</li>
-          <li>Connecting with like-minded artists</li>
-        </ul>
-        <p>
-          Please feel free to take a look at my website and feel free to
-          <a href="#contact">contact me</a>.
-        </p>
-      </div>
+      <article id="about">
+        <h2>About</h2>
+        <section class="about-content">
+          <div class="image-container">
+            <img class="image-circle" src="images/pete-thinkful.png" alt="Pete Thinkful" />
+          </div>
 
-      <div class="petes-background">
-        <h3>Pete's Background</h3>
-        <p>
-          After graduating college, I became an art teacher and worked with
-          beginners and professionals. I love art, and my works have been
-          featured in major art galleries across the globe.
-        </p>
-        <p>
-          If you're looking to hire an artist or if you're an artist looking
-          for a collaborator for your next project, please reach out! I'm so
-          excited to work with other artists to create new art.
-        </p>
-      </div>
-    </div>
+          <div class="about-details">
+            <h3 class="center-text">Hi! I'm Pete Thinkful</h3>
+            <div class="about-info">
+              <p>I'm an artist living in Denver, Colorado.</p>
+              <p>As an artist, I'm interested in:</p>
+              <ul>
+                <li>Producing abstract art</li>
+                <li>Creating street graffiti art</li>
+                <li>Connecting with like-minded artists</li>
+              </ul>
+              <p>
+                Please feel free to take a look at my website and feel free to
+                <a href="#contact">contact me</a>.
+              </p>
+            </div>
 
-    <div class="image-container">
-      <img class="image-circle" src="images/pete-thinkful.png" alt="Pete Thinkful" />
-    </div>
-  </section>
-</article>
+            <div class="petes-background">
+              <h3>Pete's Background</h3>
+              <p>
+                After graduating college, I became an art teacher and worked with
+                beginners and professionals. I love art, and my works have been
+                featured in major art galleries across the globe.
+              </p>
+              <p>
+                If you're looking to hire an artist or if you're an artist looking
+                for a collaborator for your next project, please reach out! I'm so
+                excited to work with other artists to create new art.
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
 
       <!-- Portfolio section -->
       <article id="portfolio">
@@ -113,4 +195,5 @@
   </footer>
 </body>
 </html>
+
 
