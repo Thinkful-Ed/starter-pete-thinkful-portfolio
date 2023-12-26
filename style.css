@@ -1,6 +1,7 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
+/* Updated CSS */
 body {
   background-color: #eae2b7;
   color: #003049;
@@ -8,73 +9,74 @@ body {
   padding: 40px;
 }
 
-/* Headings */
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", Times, serif;
-  text-align: center;
-}
-
 /* Header */
 header {
   text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
 }
 
-/* Containers */
-div {
-  background-color: #eae2b7;
-  margin: auto;
-  width: 600px;
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-article {
-  padding: 50px 0;
+/* About section */
+#about {
+  padding-top: 50px;
 }
 
-article div {
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  width: 100%;
 }
 
-/* Paragraphs */
-p {
-  line-height: 1.5;
-}
-
-/* Links */
-a:link {
-  color: #d62828;
-}
-
-a:hover {
-  color: #f77f00;
-}
-
-nav a {
-  padding-left: 20px;
-}
-
-/* Images */
-img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .image-circle {
-  border: 2px solid #003049;
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
-/* Footer */
-footer {
+.petes-background {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Portfolio section */
+#portfolio {
+  padding-top: 50px;
+}
+
+.portfolio-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project {
+  width: 30%; /* Adjust the width based on the layout */
   text-align: center;
 }
 
-/* Other page elements */
-hr {
-  border: 1px solid black;
+.project img {
+  width: 100%;
+  height: auto;
 }
+
+.project-description {
+  font-size: 14px;
+}
+
 
 
