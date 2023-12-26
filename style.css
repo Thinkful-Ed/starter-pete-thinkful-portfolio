@@ -1,7 +1,7 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
-/* Updated CSS */
+/* Original CSS */
 body {
   background-color: #eae2b7;
   color: #003049;
@@ -32,30 +32,23 @@ header {
 
 .about-content {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.image-container {
-  margin-right: 20px;
-}
-
-.image-circle {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-details {
-  flex: 1;
-  text-align: center; /* Center text within the about details */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
 }
 
-.center-text {
-  text-align: center;
-  margin-bottom: 10px;
+.about-details img {
+  margin-bottom: 20px;
+}
+
+.petes-background {
+  margin-top: 40px;
 }
 
 /* Portfolio section */
@@ -75,7 +68,12 @@ header {
 }
 
 .project img {
-  width
+  width: 100%;
+  height: auto;
+}
 
+.project-description {
+  font-size: 14px;
+}
 
 
