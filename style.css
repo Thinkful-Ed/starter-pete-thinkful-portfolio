@@ -2,16 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
+ 
   color: black;
-  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif; padding: 100px;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif; 
   background-color: #eae2b7;}
 
-body style {margin: 0px; height: 100%;}
+  body style {margin: 0px; height: 100%;}
 
-header {text-align: center;}
-section {margin:auto;} 
-nav {margin: auto;
- }
 
 /* Set the font family for any h1, h2, or h3 heading */
 h1 {text-align: center;}
@@ -23,12 +20,8 @@ article {
   padding: 50px 0;
 }
 
-article div {
-  text-align: center;
-}
-
 p {
-  line-height: 1.5; text-align: left;
+  line-height: 1.5; 
 }
 li {text-align: left;}
 a:link {color: #d62828;}
@@ -40,7 +33,7 @@ a:active {color: #f77f00;}
 
 
 img {
-  width:90%; max-width: 90%; height: auto}
+  width:35%; height: 35%;}
 
 
 hr {
@@ -49,14 +42,9 @@ hr {
 
 /* Add your solution below */
 
-.image-circle {border-radius: 50%; border: 2px solid #003049;
-width:75%; max-width: 75%; height: auto}
+.image-circle {border-radius: 75%; border: 2px solid #003049;
+width:20%; max-width: 20%; height: auto}
 
 footer p {text-align: center;}
 
-.group {
-  display: flex;
-}
-.item {
-  flex: 1;
-}
+
