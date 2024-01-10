@@ -9,33 +9,22 @@ body {
 body style {margin: 0px; height: 100%;}
 
 header {text-align: center;}
-section {display: flex;
-  }
-  .item {
-    flex: 1;
-    margin: 10px;
-    text-align: center;
-  }
-nav {
-  text-align: center;
-}
-
-
+section {margin:auto;} 
+nav {margin: auto;
+ }
 
 /* Set the font family for any h1, h2, or h3 heading */
-h1,
+h1 {text-align: center;}
 h2 {text-align: center;}
 h3 {text-align: center;
   font-family: "Playfair Display", Times, serif;
 }
 article {
-  padding: 20px 0;
+  padding: 50px 0;
 }
-
 
 article div {
   text-align: center;
- 
 }
 
 p {
@@ -51,10 +40,8 @@ a:active {color: #f77f00;}
 
 
 img {
-  width: 100%;
-  max-width: 100px;
-  height: auto; 
-}
+  width:90%; max-width: 90%; height: auto}
+
 
 hr {
   border: 1px solid black;
@@ -62,7 +49,14 @@ hr {
 
 /* Add your solution below */
 
-.image-circle {width: auto; border-radius: 50%; border: 2px solid #003049;
-}
+.image-circle {border-radius: 50%; border: 2px solid #003049;
+width:75%; max-width: 75%; height: auto}
 
 footer p {text-align: center;}
+
+.group {
+  display: flex;
+}
+.item {
+  flex: 1;
+}
