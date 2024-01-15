@@ -30,10 +30,9 @@
 
           .photos-container {
            display: flex;
-           align-items: center;
-           justify-content: space-around;
-           margin: 0px 50px 0px 75px;
-           padding: 0px 75px 0px 50px;
+          align-content: center;
+          margin: 0px 450px 0px 450px;
+           padding: 0px 0px 0px 25px;
              }
          .container {
            display: flex;
@@ -47,6 +46,13 @@
           align-items: center;
           margin: 0px 50px 0px 75px;
            padding: 15px 75px 0px 50px;
+         }
+         .contact-container {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          margin: 0px 350px;
+        padding: 0px 150px;
          }
 
        .flex-item {
@@ -126,7 +132,7 @@
             
               <img src="images/abstract-red.png" alt="Abstract Red"/>
            
-              <p class="flex-items" style="font-size: 14px";>
+              <p class="flex-items" style="font-size: 14px">
               Vaporware wayfarers heirloom neutra disrupt. Activated charcoal
               waistcoat scenester hell of.
             </p>
@@ -163,6 +169,7 @@
         <!-- Contact section -->
         <article id="contact">
           <h2>Contact</h2>
+        <div class="contact-container">
           <p>
             I'd love to hear from you! Please feel free to contact or follow me:
           </p>
@@ -177,8 +184,9 @@
               <a href="">Pinterest</a>
             </li>
           </ol>
+        </div>
         </article>
-      </div>
+     
     </main>
 
     <!-- Footer section -->
