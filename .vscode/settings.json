@@ -1,6 +1,7 @@
 {
-    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "CodeGPT.apiKey": "CodeGPT Plus",
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"
-    ]
+    ],
+    "CodeGPT.Autocomplete.provider": "CodeGPT Plus - Plus"
 }
