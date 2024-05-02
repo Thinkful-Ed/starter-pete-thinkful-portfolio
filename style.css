@@ -21,6 +21,11 @@ header {
   text-align: center;
 }
 
+.flex-box{
+  display: flex;
+  justify-content: center;
+}
+
 /* Containers */
 div {
   background-color: #eae2b7;
@@ -37,6 +42,14 @@ article div {
   width: 100%;
 }
 
+.flex-about{
+  width: 100%
+}
+
+.project-description {
+  font-size: 14px;
+}
+
 /* Paragraphs */
 p {
   line-height: 1.5;
@@ -51,6 +64,11 @@ a:hover {
   color: #f77f00;
 }
 
+nav {
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
 nav a {
   padding-left: 20px;
 }
@@ -58,7 +76,7 @@ nav a {
 /* Images */
 img {
   width: 100%;
-  max-width: 200px;
+  max-width: 220px;
   height: auto;
 }
 
