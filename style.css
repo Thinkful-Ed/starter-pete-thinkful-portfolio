@@ -28,13 +28,32 @@ div {
   width: 600px;
 }
 
+.group {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 20px;
+}
+
+.box {
+  flex-direction: column-reverse;
+  flex: 1;
+  padding:  0 30px 20px 30px;
+}
+
 article {
   padding: 50px 0;
+  text-align: auto;
 }
 
 article div {
-  text-align: center;
+  text-align: auto;
   width: 100%;
+  padding: 10px 0;
 }
 
 /* Paragraphs */
@@ -53,6 +72,8 @@ a:hover {
 
 nav a {
   padding-left: 20px;
+  margin-left: 10px;
+  line-height: 85px;
 }
 
 /* Images */
@@ -65,6 +86,13 @@ img {
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
+}
+
+.art {
+  display: flex;
+  text-align: center;
+  padding: 10px 10px 10px 0;
+  align-content: center;
 }
 
 /* Footer */
