@@ -10,57 +10,117 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link href="style.css" rel="stylesheet" type="text/css" />
+  
   </head>
   <body>
+    <style>
+      .heading-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px 100px;
+        padding: 0px 300px;
+      }
+        .photo-container {
+           display: flex;
+           align-items: center;
+           margin: 0px 0px 0px 75px;
+           padding: 0px 100px 0px 300px;
+             }
+             
+        .container {
+           display: flex;
+           flex-direction: column;
+           align-content: center;
+           margin: 0px 50px 0px 0px;
+           padding: 0px 150px 0px 100px;
+             }
+
+          .photos-container {
+           display: flex;
+           align-content: center;
+           margin: 0px 50px;
+           padding: 0px 300px;
+          }
+     
+         
+         .main-container {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          margin: 0px 50px;
+           padding: 0px 300px;
+         }
+         .contact-container {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          margin: 0px 100px;
+        padding: 0px 300px;
+         }
+
+       .flex-item {
+         text-align: left;}
+
+         .flex-items {
+        text-align: center;
+        }
+      </style>
     <!-- Header section -->
     <header>
-      <h1>Pete Thinkful | Artist</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      
+      <nav class="heading-container">
+        <h1 style="font-size: 35px; text-align: center;">Pete Thinkful | Artist</h1>
+        <a class= "flex-items" style = "color: red; font-size: 12px;" href="#about">About</a>
+        <a class= "flex-items" style = "color: red; font-size: 12px;" href="#portfolio">Portfolio</a>
+        <a class= "flex-items" style = "color: red; font-size: 12px;" href="#contact">Contact</a>
+        </nav>  
     </header>
 
     <main>
-      <div>
         <!-- About section -->
         <article id="about">
           <h2>About</h2>
-          <section>
-            <h3>Hi! I'm Pete Thinkful</h3>
-            <div>
+          <section> 
+            <div class="photo-container">
               <img
                 class="image-circle"
                 src="images/pete-thinkful.png"
-                alt="Pete Thinkful"
-              />
-            </div>
-            <p>I'm an artist living in Denver, Colorado.</p>
-            <p>As an artist, I'm interested in:</p>
-            <ul>
-              <li>Producing abstract art</li>
-              <li>Creating street graffiti art</li>
-              <li>Connecting with like-minded artists</li>
+                alt="Pete Thinkful"/>
+             
+              <div class="container">
+              <h3 class="flex-items">Hi! I'm Pete Thinkful</h3>
+          
+               <p class="flex-item">I'm an artist living in Denver, Colorado.</p>
+            <p class="flex-item">As an artist, I'm interested in:</p>
+            <ul class="flex-item">
+              <li class="flex-item">Producing abstract art</li>
+              <li class="flex-item">Creating street graffiti art</li>
+              <li class="flex-item">Connecting with like-minded artists</li>
             </ul>
-            <p>
+            <p class="flex-item">
               Please feel free to take a look at my website and feel free to
-              <a href="#contact">contact me</a>.
+              <a class="flex-item" href="#contact">contact me</a>.
             </p>
-          </section>
+          </div>
+        </div>
+        </section>
+    
 
           <section>
-            <h3>Pete's Background</h3>
-            <p>
+            <div class="main-container">
+            <h3 class="flex-items">Pete's Background</h3>
+            <p class="flex-item">
               After graduating college, I became an art teacher and worked with
               beginners and professionals. I love art and my works have been
               featured in major art galleries across the globe.
             </p>
-            <p>
+            <p class="flex-item">
               If you're looking to hire an artist or if you're an artist looking
               for a collaborator for your next project, please reach out! I'm so
               excited to work with other artists to create new art.
             </p>
+          </div>
           </section>
         </article>
 
@@ -70,36 +130,42 @@
         <article id="portfolio">
           <h2>Portfolio</h2>
           <section>
+            <div class="photos-container">
+              <div class="flex-items">
             <h3>Abstract Red</h3>
-            <div>
-              <img src="images/abstract-red.png" alt="Abstract Red" />
-            </div>
-            <p>
+            
+              <img src="images/abstract-red.png" alt="Abstract Red"/>
+           
+              <p class="flex-items" style="font-size: 14px" style="border: #eae2b7 5px solid;">
               Vaporware wayfarers heirloom neutra disrupt. Activated charcoal
               waistcoat scenester hell of.
             </p>
-          </section>
-
-          <section>
+            
+          </div>
+         
+            <div class="flex-items">
             <h3>Spiral Zany</h3>
-            <div>
+           
               <img src="images/spiral-zany.png" alt="Spiral Zany" />
-            </div>
-            <p>
+           
+            <p class="flex-items" style="font-size: 14px" style="border: #eae2b7 5px solid;">
               Sriracha portland taxidermy cronut messenger bag, vegan
               distillery. Vaporware kickstarter air plant mumblecore food truck.
             </p>
-          </section>
-
-          <section>
+          </div>
+          
+            <div class="flex-items">
             <h3>Melted Rainbow</h3>
-            <div>
+
               <img src="images/melted-rainbow.png" alt="Melted Rainbow" />
-            </div>
-            <p>
+          
+              <p class="flex-items" style="font-size: 14px" style="border: #eae2b7 5px solid;">
               Edison bulb single-origin coffee snackwave, actually ennui
               locavore shabby chic forage.
             </p>
+          </div>
+        </div>
+      
           </section>
         </article>
 
@@ -108,6 +174,7 @@
         <!-- Contact section -->
         <article id="contact">
           <h2>Contact</h2>
+        <div class="contact-container">
           <p>
             I'd love to hear from you! Please feel free to contact or follow me:
           </p>
@@ -122,8 +189,9 @@
               <a href="">Pinterest</a>
             </li>
           </ol>
+        </div>
         </article>
-      </div>
+     
     </main>
 
     <!-- Footer section -->
