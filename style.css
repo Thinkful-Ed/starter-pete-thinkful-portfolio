@@ -18,12 +18,15 @@ h3 {
 
 /* Header */
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Containers */
 div {
-  background-color: #eae2b7;
+  /*background-color: #eae2b7;*//*this line seems to be breaking things*/
   margin: auto;
   width: 600px;
 }
@@ -75,4 +78,22 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.align-left{
+  text-align: left;
+}
+
+.portfolio{
+  display: flex;
+  text-align: center;
+}
+
+article#portfolio p{
+  font-size: 14px;
 }
