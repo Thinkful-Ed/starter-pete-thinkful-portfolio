@@ -76,3 +76,63 @@ footer {
 hr {
   border: 1px solid black;
 }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+div.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+div.left-column {
+    width: 50%;
+}
+
+div.right-column {
+    text-align:left;
+    list-style-position: inside;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+}
+
+div.portfolio-section {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items:  center;
+}
+
+div.column-1 {
+    width: 33%;
+  
+}
+
+div.column-2 {
+    width: 33%;
+    
+}
+
+div.column-3 {
+    width: 33%;
+  
+}
+.portfolio-section p {
+    font-size: 14px;
+    float: left;
+    width: 150px;
+}
+
+ img {
+    width: 200px; 
+    height: auto;  
+}
+h3 {
+   white-space:nowrap;
+}
